@@ -2,7 +2,7 @@
 Decrypt wlan traffic via eapol
 
 ###### Disclaimer
-This is a tale of how to practically eavesdrop on unencrypted connections on a WLAN. I do not endorse using this for evil. This is supposed to be solely educational.
+This is a tale of how to practically eavesdrop on WEP/WPA2 traffic. I do not endorse using this for evil. This is supposed to be solely educational.
 
 ###### Network Card
 
@@ -10,4 +10,4 @@ Firstly, it is necessary to switch the computers (the on that will be eavesdropp
 
 ###### EAPOL
 
-To decrypt a session you need to capture the initial EAPOL handshake.
+To decrypt a session you need to capture the initial EAPOL handshake. You can read a good summary of the Extensible Authentication Protocol [here](https://sites.google.com/site/amitsciscozone/home/switching/802-1x).
