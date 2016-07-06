@@ -1,5 +1,6 @@
 # web-uncover
-Decrypt wlan traffic via eapol
+
+The goal of this tutorial is to learn the specific webpages another client is viewing while connected to the same AP as the adversary (you). This then only works for sites served over unencrypted HTTP.
 
 ###### Disclaimer
 This is a tale of how to practically eavesdrop on WEP/WPA2 traffic. I do not endorse using this for evil. This is supposed to be solely educational.
