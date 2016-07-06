@@ -12,3 +12,14 @@ Firstly, it is necessary to switch the computers (the on that will be eavesdropp
 ###### EAPOL
 
 To decrypt a session you need to capture the initial EAPOL handshake. You can read a good summary of the Extensible Authentication Protocol [here](https://sites.google.com/site/amitsciscozone/home/switching/802-1x).
+
+###### Capture Traffic
+
+To do this I recommend something like ```tcpdump```. Note on macOS the network card can be directly manipulated by add the ```-I``` flag, though this puts it in monitor mode.
+
+All you need is to specify the device such as ```eth1``` and write to a pcap file ```-w capture.pcap```. We must save as pcap as tcpdump cannot decrypt 802.11 data packets on the fly. This must be done later.
+
+###### Wireshark
+
+
+
