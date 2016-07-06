@@ -1,6 +1,6 @@
 # web-uncover
 
-The goal of this tutorial is to learn the specific webpages another client is viewing while connected to the same AP as the adversary (you). This then only works for sites served over unencrypted HTTP.
+A very quick guide to sniffing and decrypting 802.11 data packets. The goal of this tutorial is to learn the specific webpages another client is viewing while connected to the same AP as the adversary (you). This then only works for sites served over unencrypted HTTP.
 
 ###### Disclaimer
 This is a tale of how to practically eavesdrop on WEP/WPA2 traffic. I do not endorse using this for evil. This is supposed to be solely educational.
@@ -21,5 +21,6 @@ All you need is to specify the device such as ```eth1``` and write to a pcap fil
 
 ###### Wireshark
 
+Load the saved pcap file. If you started capturing before the target device joined the AP you should see EAPOL packets captured. Supply both the AP name and passphrase to Wireshark and it will then be able to decrypt the captured 802.11 data packets. After decryption, HTTP headers from the target machines session should now be visible.
 
 
